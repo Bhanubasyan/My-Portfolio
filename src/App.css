@@ -1,0 +1,747 @@
+
+.navbar-dp {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  background-image: url("/dp.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+
+/* BIG ZOOM PREVIEW ON HOVER */
+.navbar-dp:hover::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40vw;
+  height: 40vw;
+  max-width: 350px;
+  max-height: 350px;
+  
+  transform: translate(-50%, -50%);
+  
+  background-image: url("/dp.png");   /* ← YOUR IMAGE PATH HERE */
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  
+  z-index: 9999;
+  animation: zoomIn 0.25s ease-out forwards;
+}
+
+
+/* POP-IN ANIMATION */
+@keyframes zoomIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* hero section css */
+.hero-section {
+  padding: 100px 0;
+  color: rgb(25, 24, 24);
+}
+
+/* LEFT SIDE */
+.hero-left .hello {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-title {
+  font-size: 1.7rem;
+  color: #ff6b00;
+  margin-bottom: 15px;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  max-width: 450px;
+}
+
+.hero-buttons a {
+  margin-right: 12px;
+  margin-bottom: 15px;
+}
+
+/* Social Icons */
+.hero-social a {
+  margin-right: 18px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #ffffffcc;
+  transition: 0.3s;
+}
+
+.hero-social a:hover {
+  color: #ff6b00;
+}
+
+/* Skills Badges */
+.hero-skills {
+  margin-top: 20px;
+}
+
+.hero-skills span {
+  background: #ffffff22;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  backdrop-filter: blur(6px);
+}
+
+/* RIGHT SIDE DP */
+.hero-right {
+  text-align: center;
+}
+
+.hero-dp {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff33;
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+/* Hover Zoom (DP Expands) */
+.hero-dp:hover {
+  transform: scale(1.06);
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 2.3rem;
+  }
+
+  .hero-dp {
+    width: 260px;
+    height: 260px;
+    margin-top: 30px;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+}
+
+
+/* About styles */
+.about-section {
+  padding: 80px 0;
+  color: #201f1f;
+}
+
+/* Title */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Main text */
+.about-text {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  opacity: 0.85;
+}
+
+/* Highlights */
+.about-highlights li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+
+/* Right card */
+.about-card {
+  background: #f3f2f2;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(66, 65, 65, 0.1);
+}
+
+.about-card h4 {
+  font-weight: 600;
+}
+
+.about-card p {
+  margin: 5px 0;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    text-align: center;
+  }
+
+  .about-card {
+    margin-top: 30px;
+  }
+}
+
+
+/* Skills styles */
+.skills-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 0 30px;
+}
+
+.skill-card {
+  width: 100%;
+  height: 260px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.skill-card:hover .card-inner {
+  transform: rotateY(160deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-front {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.card-back {
+  background: #ffffff;
+  color: #222;
+  transform: rotateY(180deg);
+}
+
+.card-back ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.problem-solve img {
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+/* projects styles */
+.project-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 0 30px;
+}
+
+/* Card Container */
+.project-card {
+  width: 100%;
+  height: 260px;
+  perspective: 1000px;
+}
+
+.project-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.project-card:hover .project-inner {
+  transform: rotateY(160deg);
+}
+
+/* Front & Back */
+.project-front,
+.project-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-front {
+  background: #101010;
+  color: white;
+}
+
+.project-front h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.project-front p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* Back */
+.project-back {
+  background: #ffffff;
+  color: #222;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.project-back p {
+  line-height: 1.5;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.project-back a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-top: 5px;
+  display: block;
+  font-weight: 600;
+  color: #0066ff;
+}
+
+
+/* contact styles */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Mascot Box */
+.animal-container {
+  margin-bottom: 20px;
+}
+
+.animal {
+  font-size: 4.5rem;
+  transition: all 0.3s ease;
+}
+
+/* When user types message → eyes cover */
+.cover-eyes {
+  transform: scale(1.1);
+  filter: blur(1px);
+}
+
+/* After submit */
+.thankyou {
+  font-size: 1.4rem;
+  color: #0a0a0a;
+  font-weight: bold;
+}
+
+/* Form Styling */
+.contact-form {
+  width: 90%;
+  max-width: 480px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0066ff;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #0066ff;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #004ecc;
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4caf50;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  animation: fadeInOut 3s forwards;
+  z-index: 1000;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+
+/* Footer styles */
+/* src/components/Footer.css */
+
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-social {
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #00bcd4; /* You can change hover color */
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+/* Cards Grid for experince and certifications  */
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #f1f1f1; /* light color for dark background */
+  text-shadow: 1px 1px 2px #000; /* for visibility */
+}
+
+/* Grid for cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 0 30px;
+  justify-items: center;
+}
+
+/* Flip Card Container */
+.flip-card {
+  width: 100%;
+  height: 260px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(160deg);
+}
+
+/* Front & Back */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Front style */
+.flip-card-front {
+  background: #101010; /* dark background like projects */
+  color: white;
+}
+
+.flip-card-front h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.flip-card-front p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* Back style */
+.flip-card-back {
+  background: #ffffff;
+  color: #222;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  line-height: 1.5;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.flip-card-back a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-top: 5px;
+  display: block;
+  font-weight: 600;
+  color: #0066ff;
+}
+
+.flip-card-back a:hover {
+  color: #0044aa;
+}
+
+/* Duration / Year styling */
+.duration,
+.year {
+  font-weight: bold;
+  color: #f39c12;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: 0 15px;
+  }
+  .flip-card {
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: 1fr; /* single column for mobile */
+    padding: 0 10px;
+  }
+  .flip-card {
+    height: 220px;
+  }
+}
+
+/* Optional horizontal scroll for tiny screens */
+.experience-section,
+.certifications-section {
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+
+/* assistant css */
+/* Floating Button */
+.assistant-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: #222;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #00000050;
+  z-index: 9999;
+}
+
+/* Sidebar */
+.assistant-sidebar {
+  position: fixed;
+  top: 0;
+  right: -330px;
+  width: 330px;
+  height: 100vh;
+  background: #0f0f0f;
+  border-left: 1px solid #333;
+  transition: 0.4s ease;
+  z-index: 9998;
+  display: flex;
+  flex-direction: column;
+}
+
+.assistant-sidebar.open {
+  right: 0;
+}
+
+/* Header */
+.assistant-header {
+  padding: 15px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border-bottom: 1px solid #333;
+}
+
+/* Chat Area */
+.assistant-chat-area {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.assistant-message {
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: white;
+  max-width: 80%;
+}
+
+.assistant-message.user {
+  background: #3f3f3f;
+  align-self: flex-end;
+}
+
+.assistant-message.bot {
+  background: #1e1e1e;
+  align-self: flex-start;
+}
+
+/* Input Area */
+.assistant-input {
+  display: flex;
+  border-top: 1px solid #333;
+}
+
+.assistant-input input {
+  flex: 1;
+  padding: 12px;
+  background: #111;
+  border: none;
+  color: white;
+}
+
+.assistant-input button {
+  padding: 12px 15px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

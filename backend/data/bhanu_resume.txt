@@ -1,0 +1,135 @@
+BHANU
+ +91-7500659356 | Bhanubasyan@gmail.com | Portfolio
+ LinkedIn | GitHub |
+ Haridwar, Uttarakhand- 247671, India
+ OBJECTIVE
+ Motivated and results-driven Full Stack Web Developer Intern with a solid foundation in modern web technologies,
+ including HTML, CSS, JavaScript, React, and Node.js. Experienced in building and deploying responsive web
+ applications with a focus on delivering high-quality, scalable solutions. Seeking to leverage hands-on expertise in
+ full-stack development to contribute to innovative projects and grow with a dynamic software development team.
+ EXPERIENCE
+ • CodSoft 
+ Web Development Intern
+ September 2023- October 2023
+ India
+ ◦ Improved and deployed **three responsive web applications** (a personal portfolio, calculator app, and landing
+ page) using HTML, CSS, and JavaScript.
+ ◦ Boosted UI/UX design by creating user-friendly layouts and optimizing page performance, result ing in a **15%
+ increase in user engagement**.
+ ◦ put into clean coding practices and **maintained version control with Git and GitHub**, reducing code merge
+ conflicts by **10%**.
+ ◦ Consistently delivered projects on time, gaining hands-on experience in front-end development and
+ problem-solving within a professional internship setting.
+ • Bharat Intern 
+ Web Development Intern
+ September 2023- October 2023
+ Remote
+ ◦ Built interactive projects, including a Weather App with API integration, a Netflix Clone (front-end UI), and a
+ Temperature Converter using HTML, CSS, and JavaScript.
+ ◦ Utilized core front-end development principles to create responsive and visually appealing web interfaces.
+ ◦ Strengthened skills in API handling, DOM manipulation, and responsive design through real-world tasks.
+ ◦ Refined time management and project delivery by completing all assigned tasks within internship deadlines.
+ EDUCATION
+ • Veer MadhoSingh Bhandari Uttarakhand Technical University
+ Bachelor of Technology (B.Tech) in Computer Science & Engineering
+ ◦ Current GPA: 7.01 / 10.00 (till 6th Semester)
+ Sep 2022– Jun 2026
+ Dehradun, India
+ ◦ KeyCoursework: Data Structures & Algorithms, Database Management Systems, Operating Systems, Computer
+ Networks, Software Engineering, Web Development
+ • Government Inter College Niranjanpur
+ Higher Secondary Education (Class XII)– UBSE/State Board
+ 2022
+ [Haridwar, India]
+ ◦ Percentage: 70%
+ ◦ Core Subjects: Physics, Chemistry, Mathematics
+ • Government Inter College Niranjanpur
+ Secondary Education (Class X)– UBSE/State Board
+ ◦ Percentage: 83.2%
+ PROJECTS
+ 2020
+ [Haridwar, India]
+ • Portfolio Website (Highlight Project)
+ Tools: React, Tailwind CSS, JavaScript, GitHub Pages
+ May2024- July 2024
+ [Web]
+ ◦ Designed and developed a responsive personal portfolio website, showcasing projects, articles, and open-source
+ contributions.
+ ◦ Implemented modern front-end technologies (React, Tailwind CSS) to create an optimized UI/UX.
+ ◦ Integrated a unique resume comparison feature, demonstrating innovative problem-solving skills.
+ ◦ Deployed the website on GitHub Pages, establishing a professional online presence.
+ • Text-to-Speech Converter
+ Tools: HTML, CSS, JavaScript
+ Aug 2024- Sep 2024
+ ◦ Built a web-based tool to convert text into natural-sounding speech using the SpeechSynthesis API.
+ ◦ Upgraded accessibility by supporting multiple voices and languages.
+ [GitHub]
+ ◦ Applied responsive design principles to ensure cross-device usability.
+Apr 2024
+ • File Encryption Tool
+ Tools: JAVA
+ ◦ Executed the AES algorithm for secure file encryption and decryption.
+ ◦ Expanded a simple Command-Line Interface (CLI) to enable easy usage for non-technical users.
+ ◦ Fine-tuned data privacy and protected sensitive files from unauthorized access.
+ • Carbon Footprint Tracker (Ongoing)
+ Tools: React Native, Node.js, MongoDB, Google Maps API
+ ◦ Developing a mobile application to calculate and visualize individual and community carbon footprints.
+ ◦ Integrating APIs to track transport and energy usage to promote sustainability awareness.
+ ◦ Focusing on climate-tech innovation to encourage eco-friendly practices.
+ RESEARCH WORK / PUBLICATIONS
+ [GitHub]
+ Sep 2025- Present
+ • Ongoing Research: Design and Implementation of a Web-Based Carbon Footprint Tracker
+ Under Review / In Progress
+ Nov 2025– Present
+ ◦ Developing a web-based model for estimating and visualizing carbon emissions using data purification, model
+ training, and predictive analytics. Integrates React (frontend) and Node.js (backend) for real-time sustainability
+ tracking.
+ • Future Research: Predictive Modeling for Climate Impact Assessment
+ Conceptual Stage
+ Expected– 2026
+ ◦ Designing ML models involving regression and deep learning approaches to forecast environmental impacts
+ from humanactivities. Focus on preprocessing, feature extraction, and deployment for real-time analysis.
+ SKILLS
+ • **Programming Languages:** JavaScript, HTML5, CSS3, C++
+ • **Frameworks & Libraries:**React.js, Node.js, Express.js, Bootstrap, Tailwind CSS
+ • **Databases:**MySQL
+ • **Machine Learning & Data Science:**Python (NumPy, Pandas, Scikit-learn), Data Visualization, Model Training
+ &Evaluation, Data Preprocessing, Regression & Classification Techniques
+ • **Tools & Platforms:**Git, GitHub, VS Code, Postman, Jupyter Notebook
+ • **Concepts & Methodologies:**RESTful APIs, UI/UX Design, Problem Solving, Agile Methodology, Team
+ Management
+ HONORS AND LEADERSHIP
+ • CampusAmbassador
+ IIT Roorkee
+ 2025– Present
+ 
+ ◦ Represented IIT Roorkee as a Campus Ambassador, leading outreach and engagement activities for students and
+ communities.
+ ◦ Organized and coordinated multiple events, workshops, and webinars, impacting over 200+ participants.
+ ◦ Initiated campaigns to increase student participation and collaboration, demonstrating proactive leadership and
+ strategic planning.
+ ◦ Developed strong communication, team management, and problem-solving skills through cross-functional
+ collaboration.
+ • Team Leader– Carbon Footprint Tracker Project (Ongoing)
+ UTU
+ 2024– 2025
+ ◦ **Led a team of 4 students** to develop a full-stack Carbon Footprint Tracker web application, which resulted in a
+ **10% reduction in average carbon emissions** during the initial testing phase.
+ ◦ Coordinated all aspects of the project, including task allocation, development timelines, and code reviews,
+ ensuring **high-quality, on-time delivery** .
+ ◦ Mentored team members in front-end and back-end development, **API integration**, and UI/UX design.
+ ◦ Improved overall team collaboration and project management skills while implementing a **real-world
+ sustainability solution**.
+ • Flipcard Grid 6 Quiz Competition Certificate
+ [Organization Name]
+ 2025
+ 
+ ◦ Achieved certification in the Flipcard Grid 6 Quiz Competition, showcasing problem-solving and analytical skills.
+ ◦ Performed under time constraints, demonstrating persistence and strategic thinking.
+ • Panchayat Quiz Competition Participation
+ IIT Roorkee
+ 2025
+ 
+ ◦ Participated in a prestigious quiz competition, showcasing analytical ability and adaptability under pressure.
+ ◦ Enhanced professional exposure and networking by engaging with peers, mentors, and experts.
