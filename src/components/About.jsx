@@ -30,7 +30,7 @@ const About = () => {
             <li>✔ Problem-solving mindset</li>
           </ul>
 
-          <a href="/Bhanu_CV.pdf" className="btn btn-outline-dark mt-3">
+          <a href="/My-Portfolio/Bhanu_CV.pdf" download className="btn btn-outline-dark mt-3">
             Download CV
           </a>
         </div>
