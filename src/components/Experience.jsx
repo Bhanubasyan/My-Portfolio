@@ -3,38 +3,38 @@ import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
   {
-    role: "React.js Developer Intern",
-    company: "Ciperschool",
-    duration: "Nov 2025 - Jan 2026",
-    details: "Built reusable React components and handled frontend state management.",
-    certificateLink: "https://www.ciperschool.com/certificate/react-intern"
-  },
-  {
-    role: "Frontend Developer",
-    company: "Freelance Projects",
-    duration: "2024 - 2025",
-    details: "Created portfolio websites and small web apps using React and JS.",
+    role: "Frontend Developer (Self Projects)",
+    company: "Personal Development",
+    duration: "2025 - Present",
+    details: "Built multiple real-world projects using React, JavaScript, and modern UI frameworks. Focused on responsive design, reusable components, and performance optimization.",
     certificateLink: null
   },
   {
-    role: "UI/UX Intern",
-    company: "DesignLab",
-    duration: "2024",
-    details: "Designed wireframes and prototypes for client projects.",
-    certificateLink: "https://www.designlab.com/certificate/uiux"
+    role: "Full Stack Developer (Project Based)",
+    company: "Academic & Personal Projects",
+    duration: "2025",
+    details: "Developed full-stack applications like Inventory Dashboard and Clayora using React, Node.js, and MongoDB with authentication and API integration.",
+    certificateLink: null
   },
   {
-    role: "Open Source Contributor",
-    company: "GitHub Projects",
-    duration: "2023 - Present",
-    details: "Contributed to React and JS open-source repositories.",
+    role: "Hackathon Participant",
+    company: "Climate Hackathon",
+    duration: "2025",
+    details: "Built EcoSnap, an AI-based waste detection app using Bolt.new, focusing on sustainability and real-world problem solving.",
+    certificateLink: null
+  },
+  {
+    role: "Open Source & Learning",
+    company: "GitHub",
+    duration: "2024 - Present",
+    details: "Actively learning and improving through GitHub projects, DSA practice, and continuous development in frontend and backend technologies.",
     certificateLink: null
   }
 ];
 
 const Experience = () => {
   return (
-    <section id="experince" className="experience-section">
+    <section id="experience" className="experience-section">
       <h2 className="section-title">Experience</h2>
       <div className="cards-grid">
         {experiences.map((exp, index) => (

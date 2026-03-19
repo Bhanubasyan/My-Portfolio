@@ -8,62 +8,100 @@ const Projects = () => {
 
       <div className="project-container">
 
-        {/* Project 1 */}
+     
+      
         <div className="project-card">
           <div className="project-inner">
             <div className="project-front">
-              <h3>Text to Speech App</h3>
-              <p>HTML • CSS • JS</p>
+              <h3>Clayora</h3>
+              <p>React • Node.js • MongoDB</p>
             </div>
 
             <div className="project-back">
               <p>
-                A fast and simple text-to-speech converter supporting multiple
-                voices.
+                A full-stack web application built for managing and showcasing products
+                with modern UI, authentication, and scalable backend integration.
               </p>
-              <a href="https://bhanubasyan.github.io/Text-To-Speech-Converter/" target="_blank">🔗 Live Demo</a>
-              <a href="https://github.com/Bhanubasyan/Text-To-Speech-Converter" target="_blank">💻 GitHub</a>
+              <a href="https://clayora.onrender.com/" target="_blank">🔗 Live</a>
+              <a href="https://github.com/Bhanubasyan/ClayOra" target="_blank">💻 GitHub</a>
             </div>
           </div>
         </div>
 
-        {/* Project 2 */}
-        <div className="project-card">
-          <div className="project-inner">
-            <div className="project-front">
-              <h3>Eco Snap Web</h3>
-              <p>React • Node  • CSS</p>
-            </div>
 
-            <div className="project-back">
-              <p>
-                EcoSnap is a web application built using Bolt.new that helps users identify waste types through image recognition and suggests proper disposal or recycling methods. Users can simply take a photo of an item, and the app will guide them on how to dispose of it sustainably.
-              </p>
-              <a href="https://github.com/Bhanubasyan/EcoSnap-App">🔗 Live Demo</a>
-              <a href="https://ecosnap-app.netlify.app/">💻 GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        {/* Project 3 */}
         <div className="project-card">
           <div className="project-inner">
             <div className="project-front">
               <h3>Zomato Listing Page</h3>
-              <p>HTML , CSS , NODE </p>
+              <p>HTML • CSS • Node.js</p>
             </div>
 
             <div className="project-back">
               <p>
-               A restaurant listing webpage similar to Zomato with search and filter functionalities.
+                A restaurant listing platform with search and filter functionality.
               </p>
-              <a href="https://zomato-restaurant-listing.netlify.app/">🔗 Live Demo</a>
-              <a href="https://github.com/Bhanubasyan/restaurant-listing">💻 GitHub</a>
+              <a href="https://zomato-restaurant-listing.netlify.app/" target="_blank">🔗 Live </a>
+              <a href="https://github.com/Bhanubasyan/restaurant-listing" target="_blank">💻 GitHub</a>
             </div>
           </div>
         </div>
 
-        {/* Project 4 */}
+       
+        <div className="project-card">
+          <div className="project-inner">
+            <div className="project-front">
+              <h3>Inventory Dashboard</h3>
+              <p>React • Node.js • MongoDB</p>
+            </div>
+
+            <div className="project-back">
+              <p>
+                A full-stack inventory management system with authentication, product tracking,
+                and dashboard analytics.
+              </p>
+              <a href="https://inventory-dasboard.onrender.com/" target="_blank">🔗 Live </a>
+              <a href="https://github.com/Bhanubasyan/vehicle-management-system" target="_blank">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+
+   
+        <div className="project-card">
+          <div className="project-inner">
+            <div className="project-front">
+              <h3>Traffic Control System</h3>
+              <p>Python • SUMO • Simulation</p>
+            </div>
+
+            <div className="project-back">
+              <p> 
+                Ogoing project to develop an intelligent traffic control system using Python and SUMO for traffic simulation. The system will optimize traffic flow and reduce congestion through real-time data analysis and adaptive signal control.
+              </p>
+              <a href="#" target="_blank">🔗 Live </a>
+              <a href="#" target="_blank">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+
+       
+        <div className="project-card">
+          <div className="project-inner">
+            <div className="project-front">
+              <h3>CipherSQL Studio</h3>
+              <p>React • Node.js • Database</p>
+            </div>
+
+            <div className="project-back">
+              <p>
+                A secure SQL project for managing and encrypting database queries.
+              </p>
+              <a href="https://ciphersqlstudio-assignment-1.onrender.com/" target="_blank">🔗 Live </a>
+              <a href="https://github.com/Bhanubasyan/CipherSQLStudio-Assignment" target="_blank">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      
         <div className="project-card">
           <div className="project-inner">
             <div className="project-front">
@@ -73,15 +111,51 @@ const Projects = () => {
 
             <div className="project-back">
               <p>
-                A modern, fully responsive portfolio built with animations and
-                reusable components.
+                A modern responsive portfolio showcasing projects and skills.
               </p>
-              <a href="https://bhanubasyan.github.io/My-Portfolio/">🔗 Live Demo</a>
-              <a href="https://github.com/Bhanubasyan/My-Portfolio">💻 GitHub</a>
+              <a href="https://bhanubasyan.github.io/My-Portfolio/" target="_blank">🔗 Live </a>
+              <a href="https://github.com/Bhanubasyan/My-Portfolio" target="_blank">💻 GitHub</a>
             </div>
           </div>
         </div>
 
+
+        <div className="project-card">
+          <div className="project-inner">
+            <div className="project-front">
+              <h3>Text to Speech App</h3>
+              <p>HTML • CSS • JavaScript</p>
+            </div>
+
+            <div className="project-back">
+              <p>
+                A fast and simple text-to-speech converter supporting multiple voices.
+              </p>
+              <a href="https://bhanubasyan.github.io/Text-To-Speech-Converter/" target="_blank">🔗 Live </a>
+              <a href="https://github.com/Bhanubasyan/Text-To-Speech-Converter" target="_blank">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      
+        <div className="project-card">
+          <div className="project-inner">
+            <div className="project-front">
+              <h3>EcoSnap App</h3>
+              <p>React • Node.js • CSS</p>
+            </div>
+
+            <div className="project-back">
+              <p>
+                AI-based waste detection app that identifies items and suggests recycling methods.
+              </p>
+              <a href="https://ecosnap-app.netlify.app/" target="_blank">🔗 Live </a>
+              <a href="https://github.com/Bhanubasyan/EcoSnap-App" target="_blank">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      
       </div>
     </section>
   );
