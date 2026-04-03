@@ -156,6 +156,27 @@ const Projects = () => {
         </div>
 
       
+       <div className="project-card">
+          <div className="project-inner">
+            <div className="project-front">
+              <h3>Finance Dashboard (Secure & Scalable UI)</h3>
+              <p>React • JavaScript(ES6+) • REST API</p>
+            </div>
+
+            <div className="project-back">
+              <p> 
+               A modern and responsive Finance Dashboard built using React, focused on clean UI, performance optimization, and secure data handling. The application visualizes financial data through interactive components while ensuring protection against common vulnerabilities like data exposure and excessive server requests. Designed with scalability and real-world best practices in mind.
+               📊 Interactive financial charts and analytics
+🌙 Light/Dark mode UI
+⚡ Optimized API calls with caching
+🔒 Secure handling of sensitive data
+📱 Fully responsive design
+              </p>
+              <a href="http://finance-dashboard-mmbd.onrender.com/" target="_blank">🔗 Live </a>
+              <a href="https://github.com/Bhanubasyan/Finance-Dashboard" target="_blank">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
