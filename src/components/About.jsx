@@ -39,7 +39,7 @@ const About = () => {
   </ul>
 
   <a 
-    href="/portfolio/My-Portfolio/Bhanu_CV.pdf" 
+    href="/portfolio/My-Portfolio/Bhanu-software-developerCV.pdf" 
     download 
     className="btn btn-outline-dark mt-3"
   >
