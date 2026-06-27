@@ -1,20 +1,16 @@
-import React, { useState, useRef } from "react";
+import { useRef, useState } from "react";
 import "../App.css";
 import emailjs from "@emailjs/browser";
+import { Mail, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
-  const [coverEyes, setCoverEyes] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false); // Loading state
+  const [loading, setLoading] = useState(false);
   const form = useRef();
-
-  const handleMessageChange = (e) => {
-    setCoverEyes(e.target.value.length > 0);
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true); // start loading
+    setLoading(true);
 
     emailjs
       .sendForm(
@@ -24,15 +20,13 @@ const Contact = () => {
         "2GQcsjttVMmm-pC38"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           setSubmitted(true);
-          setLoading(false); // stop loading
-          form.current.reset(); // clear the form
+          setLoading(false);
+          form.current.reset();
         },
-        (error) => {
-          console.log(error.text);
-          setLoading(false); // stop loading
+        () => {
+          setLoading(false);
           alert("Failed to send message, please try again.");
         }
       );
@@ -40,40 +34,50 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact-section">
-      <h2 className="contact-title">Contact Me</h2>
+      <p className="section-kicker">Contact</p>
+      <h2 className="contact-title">Let us build something useful</h2>
+      <p className="section-lead">
+        Have an opportunity, collaboration, or project idea? Send the details and I will
+        get back with a clear next step.
+      </p>
 
-      {/* Mascot */}
-      <div className="animal-container">
-        {!submitted ? (
-          <div className={`animal ${coverEyes ? "cover-eyes" : ""}`}>🐵</div>
-        ) : (
-          <div className="animal thankyou">
-            🙈 Thank you! Bhanu will reply soon 😊
+      <div className="contact-layout">
+        <aside className="contact-aside">
+          <h3>Open to frontend and full-stack project work.</h3>
+          <p>
+            I am interested in React interfaces, dashboards, product pages, API-connected
+            applications, and practical tools that solve real problems.
+          </p>
+          <div className="contact-points">
+            <span><Mail size={18} /> bhanubasyan@gmail.com</span>
+            <span><MapPin size={18} /> Haridwar, Uttarakhand, India</span>
           </div>
-        )}
+        </aside>
+
+        <form ref={form} className="contact-form" onSubmit={handleSubmit}>
+          <div className="animal-container">
+            <div className="animal">
+              {submitted ? "Message sent successfully." : "Tell me about your project."}
+            </div>
+          </div>
+          <input type="text" name="user_name" placeholder="Your Name" required />
+          <input type="email" name="user_email" placeholder="Your Email" required />
+          <input type="text" name="contact_number" placeholder="Contact Number" required />
+          <textarea
+            name="message"
+            placeholder="Write your message..."
+            rows="5"
+            required
+          />
+          <button type="submit" disabled={loading}>
+            <Send size={18} /> {loading ? "Sending..." : "Send Message"}
+          </button>
+        </form>
       </div>
 
-      {/* Contact Form */}
-      <form ref={form} className="contact-form" onSubmit={handleSubmit}>
-        <input type="text" name="user_name" placeholder="Your Name" required />
-        <input type="email" name="user_email" placeholder="Your Email" required />
-        <input type="text" name="contact_number" placeholder="Contact Number" required />
-        <textarea
-          name="message"
-          placeholder="Write your message..."
-          rows="4"
-          onChange={handleMessageChange}
-          required
-        />
-        <button type="submit" disabled={loading}>
-          {loading ? "Sending..." : "Send Message"}
-        </button>
-      </form>
-
-      {/* Optional popup animation */}
       {submitted && (
         <div className="popup">
-          <p>🎉 Message sent successfully! Bhanu will reply soon 😊</p>
+          <p>Message sent successfully. Bhanu will reply soon.</p>
         </div>
       )}
     </section>

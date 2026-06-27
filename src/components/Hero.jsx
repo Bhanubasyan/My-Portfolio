@@ -1,47 +1,70 @@
-import React from "react";
 import "../App.css";
-import dp from "/dp.png"; // your profile image
+import dp from "/dp.png";
+import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
     <section id="hero" className="hero-section container">
       <div className="row align-items-center">
-
-        {/* LEFT SIDE CONTENT */}
-        <div className="col-md-6 hero-left">
-          <h3 className="hello">Hi, I’m</h3>
-          <h1 className="hero-name">Bhanu </h1>
+        <div className="col-lg-7 hero-left">
+          <div className="eyebrow">Available for frontend work</div>
+          <h3 className="hello">Hi, I am</h3>
+          <h1 className="hero-name">Bhanu</h1>
           <h2 className="hero-title">Frontend Web Developer</h2>
 
           <p className="hero-tagline">
-            I build fast, responsive and user-friendly web applications using React, JavaScript & modern UI tools.
+            I design and build fast, responsive, production-ready interfaces with React,
+            JavaScript, clean component systems, and thoughtful user experience.
           </p>
 
-          {/* Buttons */}
           <div className="hero-buttons">
-            <a href="/My-Portfolio/Bhanu-Software-engineer.pdf" download className="btn btn-outline-dark btn-lg">Download Resume</a>
-            <a href="#contact" className="btn btn-outline-dark btn-lg">Hire Me</a>
+            <a href="/Bhanu-Software-engineer.pdf" download className="btn btn-primary-portfolio">
+              <Download size={18} /> Download Resume
+            </a>
+            <a href="#projects" className="btn">
+              View Projects <ArrowRight size={18} />
+            </a>
           </div>
 
-          {/* Social Icons */}
           <div className="hero-social">
-            <a href="https://github.com/Bhanubasyan" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            <a href="mailto:youremail@gmail.com">Email</a>
+            <a href="https://github.com/Bhanubasyan" target="_blank" rel="noopener noreferrer">
+              <Github size={17} /> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/bhanu-b82596253/" target="_blank" rel="noopener noreferrer">
+              <Linkedin size={17} /> LinkedIn
+            </a>
+            <a href="mailto:bhanubasyan@gmail.com">
+              <Mail size={17} /> Email
+            </a>
           </div>
 
-          {/* Skills */}
           <div className="hero-skills">
             <span>React</span>
             <span>JavaScript</span>
             <span>Bootstrap</span>
             <span>Node.js</span>
           </div>
+
+          <div className="hero-stats">
+            <div className="stat-card">
+              <strong>10+</strong>
+              <span>Projects shipped</span>
+            </div>
+            <div className="stat-card">
+              <strong>6+</strong>
+              <span>Months hands-on</span>
+            </div>
+            <div className="stat-card">
+              <strong>Full</strong>
+              <span>Stack learner</span>
+            </div>
+          </div>
         </div>
 
-        {/* RIGHT SIDE IMAGE */}
-        <div className="col-md-6 hero-right">
-          <img src={dp} alt="profile" className="hero-dp" />
+        <div className="col-lg-5 hero-right">
+          <div className="profile-stage">
+            <img src={dp} alt="Bhanu profile" className="hero-dp" />
+          </div>
         </div>
       </div>
     </section>

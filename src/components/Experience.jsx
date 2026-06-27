@@ -1,4 +1,3 @@
-import React from "react";
 import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
@@ -35,7 +34,12 @@ const experiences = [
 const Experience = () => {
   return (
     <section id="experience" className="experience-section">
-      <h2 className="section-title">Experience</h2>
+      <p className="section-kicker">Experience</p>
+      <h2 className="section-title">Practice shaped through real builds</h2>
+      <p className="section-lead">
+        Project-based experience across frontend, full-stack apps, hackathon work,
+        and continuous learning through GitHub and problem solving.
+      </p>
       <div className="cards-grid">
         {experiences.map((exp, index) => (
           <ExperienceCard key={index} {...exp} />

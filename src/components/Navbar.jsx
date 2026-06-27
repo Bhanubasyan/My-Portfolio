@@ -1,57 +1,41 @@
-import React from "react";
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Menu, X } from "lucide-react";
+
+const navItems = [
+  ["Home", "#home"],
+  ["About", "#about"],
+  ["Skills", "#skills"],
+  ["Projects", "#projects"],
+  ["Experience", "#experience"],
+  ["Certifications", "#certifications"],
+  ["Contact", "#contact"],
+];
 
 const PortfolioNavbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <section id="home">
-    <Navbar expand="lg" bg="dark" variant="dark" fixed="top">
-      <Container>
-        <div className="navbar-dp"></div>
+    <header id="home" className="navbar portfolio-navbar fixed-top">
+      <div className="container nav-shell">
+        <a href="#home" className="brand-lockup" onClick={() => setOpen(false)}>
+          <div className="navbar-dp" aria-hidden="true"></div>
+          <span>Bhanu</span>
+        </a>
 
-        {/* LOGO */}
+        <button className="nav-toggle" onClick={() => setOpen((value) => !value)} aria-label="Toggle navigation">
+          {open ? <X size={22} /> : <Menu size={22} />}
+        </button>
 
-        <Navbar.Brand href="#home" className="fw-bold fs-4">
-          Bhanu 
-        </Navbar.Brand>
-
-        {/* TOGGLER BUTTON FOR MOBILE */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
-        {/* COLLAPSABLE NAV ITEMS */}
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="#home" className="mx-2">
-              Home
-            </Nav.Link>
-
-            <Nav.Link href="#about" className="mx-2">
-              About
-            </Nav.Link>
-
-            <Nav.Link href="#skills" className="mx-2">
-              Skills
-            </Nav.Link>
-
-            <Nav.Link href="#projects" className="mx-2">
-              Projects
-            </Nav.Link>
- <Nav.Link href="#experince" className="mx-2">
-              Experience
-            </Nav.Link>
-
-<Nav.Link href="#certifications" className="mx-2">
-             Certifications
-            </Nav.Link>
-
-            <Nav.Link href="#contact" className="mx-2">
-              Contact
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-    </section>
+        <nav className={`nav-menu ${open ? "open" : ""}`}>
+          {navItems.map(([label, href]) => (
+            <a key={href} href={href} className="nav-link" onClick={() => setOpen(false)}>
+              {label}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </header>
   );
 };
 

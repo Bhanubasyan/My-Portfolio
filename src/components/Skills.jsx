@@ -1,14 +1,17 @@
-import React from "react";
 import "../App.css";
 
 const Skills = () => {
   return (
     <section id="skills" className="skills-section">
-      <h2 className="section-title">My Skills</h2>
+      <p className="section-kicker">Capabilities</p>
+      <h2 className="section-title">Skills that support modern web apps</h2>
+      <p className="section-lead">
+        A practical stack for building polished interfaces, connecting APIs, and improving
+        application structure over time.
+      </p>
 
       <div className="skills-container">
 
-        {/* Soft Skills */}
         <div className="skill-card">
           <div className="card-inner">
             <div className="card-front">
@@ -26,7 +29,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Frontend Skills */}
         <div className="skill-card">
           <div className="card-inner">
             <div className="card-front">
@@ -44,7 +46,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Backend Skills */}
         <div className="skill-card">
           <div className="card-inner">
             <div className="card-front">
@@ -62,23 +63,21 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Problem Solving */}
         <div className="skill-card">
           <div className="card-inner">
             <div className="card-front">
               <h3>Problem Solving</h3>
             </div>
             <div className="card-back problem-solve">
-             <a href="https://leetcode.com/u/Bhanu2213/"><p>Leetcode </p></a>
+             <a href="https://leetcode.com/u/Bhanu2213/" target="_blank" rel="noopener noreferrer">LeetCode</a>
               <img
-                src="/public\gfg.png"
+                src="/gfg.png"
                 alt="Problem Solving Graph"
               />
-             <a href="https://www.geeksforgeeks.org/user/bhanubasyan/"><p>GFG</p></a>
-              {/* Replace with your actual image */}
+             <a href="https://www.geeksforgeeks.org/user/bhanubasyan/" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a>
              
               <img
-                src="/public\leetcode.png"
+                src="/leetcode.png"
                 alt="Problem Solving Graph"
               />
             </div>
