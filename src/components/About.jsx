@@ -7,26 +7,26 @@ const About = () => {
       <div className="row align-items-center g-4">
         <div className="col-lg-7 about-left">
           <p className="section-kicker">About me</p>
-          <h2 className="about-title">Building interfaces that feel fast, clean, and useful.</h2>
+          <h2 className="about-title">Building useful software across frontend, backend, and AI.</h2>
 
           <p className="about-text">
-            I am <strong>Bhanu</strong>, a frontend web developer focused on React,
-            JavaScript, HTML, CSS, and modern UI frameworks. I enjoy converting ideas into
-            responsive applications with clean layouts, reusable components, and smooth user flows.
+            I am <strong>Bhanu</strong>, a software developer focused on frontend,
+            backend, and AI-powered web applications. I work with React, JavaScript,
+            Node.js, APIs, databases, and modern UI frameworks to turn ideas into usable products.
           </p>
 
           <p className="about-text">
-            My project work includes dashboards, product platforms, learning tools,
-            AI-based web apps, and secure utility projects. I am also expanding into Node.js,
-            Express, MongoDB, and DSA so I can build stronger full-stack products.
+            My project work includes dashboards, product platforms, backend-integrated apps,
+            learning tools, AI-based web apps, and secure utility projects. I enjoy building
+            complete systems with clean interfaces, reliable APIs, and practical automation.
           </p>
 
           <ul className="about-highlights">
             <li>Frontend development</li>
+            <li>Backend development</li>
+            <li>AI-powered apps</li>
             <li>React component systems</li>
             <li>REST API integration</li>
-            <li>Responsive UI</li>
-            <li>DSA practice</li>
           </ul>
 
           <a href="/Bhanu-software-developerCV.pdf" download className="btn">
@@ -40,6 +40,7 @@ const About = () => {
             <ul>
               <li>Frontend: React, JavaScript, HTML, CSS, Bootstrap</li>
               <li>Backend: Node.js, Express.js</li>
+              <li>AI: AI tools, automation, intelligent web features</li>
               <li>Database: MongoDB</li>
               <li>Tools: Git, GitHub, Vite</li>
             </ul>
@@ -54,6 +55,7 @@ const About = () => {
             <h4>Interests</h4>
             <ul>
               <li>Full-stack development</li>
+              <li>AI-powered applications</li>
               <li>UI/UX design</li>
               <li>Open source contribution</li>
               <li>Problem solving</li>

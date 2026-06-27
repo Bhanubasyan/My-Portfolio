@@ -7,14 +7,14 @@ const Hero = () => {
     <section id="hero" className="hero-section container">
       <div className="row align-items-center">
         <div className="col-lg-7 hero-left">
-          <div className="eyebrow">Available for frontend work</div>
+          <div className="eyebrow">Frontend / Backend / AI</div>
           <h3 className="hello">Hi, I am</h3>
           <h1 className="hero-name">Bhanu</h1>
-          <h2 className="hero-title">Frontend Web Developer</h2>
+          <h2 className="hero-title">Software Developer</h2>
 
           <p className="hero-tagline">
-            I design and build fast, responsive, production-ready interfaces with React,
-            JavaScript, clean component systems, and thoughtful user experience.
+            I build modern web applications across frontend, backend, and AI-powered features
+            using React, JavaScript, Node.js, APIs, and practical product thinking.
           </p>
 
           <div className="hero-buttons">
@@ -41,7 +41,8 @@ const Hero = () => {
           <div className="hero-skills">
             <span>React</span>
             <span>JavaScript</span>
-            <span>Bootstrap</span>
+            <span>Backend</span>
+            <span>AI Tools</span>
             <span>Node.js</span>
           </div>
 
@@ -56,7 +57,7 @@ const Hero = () => {
             </div>
             <div className="stat-card">
               <strong>Full</strong>
-              <span>Stack learner</span>
+              <span>Stack developer</span>
             </div>
           </div>
         </div>

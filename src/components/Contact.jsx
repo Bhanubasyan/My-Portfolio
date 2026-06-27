@@ -43,10 +43,10 @@ const Contact = () => {
 
       <div className="contact-layout">
         <aside className="contact-aside">
-          <h3>Open to frontend and full-stack project work.</h3>
+          <h3>Open to software development, backend, frontend, and AI project work.</h3>
           <p>
-            I am interested in React interfaces, dashboards, product pages, API-connected
-            applications, and practical tools that solve real problems.
+            I am interested in React interfaces, backend APIs, dashboards, AI-powered
+            applications, product pages, and practical tools that solve real problems.
           </p>
           <div className="contact-points">
             <span><Mail size={18} /> bhanubasyan@gmail.com</span>

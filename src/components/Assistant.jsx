@@ -11,19 +11,19 @@ const quickPrompts = [
 
 const portfolioKnowledge = {
   summary:
-    "Bhanu is a frontend-focused web developer building responsive React interfaces, dashboards, full-stack projects, and practical tools. He is growing toward full-stack development with Node.js, Express, MongoDB, APIs, and DSA.",
+    "Bhanu is a software developer working across frontend, backend, and AI-powered web applications. He builds responsive React interfaces, backend APIs, dashboards, full-stack projects, automation-friendly tools, and practical products.",
   skills:
-    "Core skills: React, JavaScript, HTML, CSS, Bootstrap, Tailwind CSS, Node.js, Express.js, MongoDB, REST APIs, Git, GitHub, responsive UI, UI/UX basics, and problem solving.",
+    "Core skills: React, JavaScript, HTML, CSS, Bootstrap, Tailwind CSS, Node.js, Express.js, MongoDB, REST APIs, AI tools, automation, Git, GitHub, responsive UI, UI/UX basics, and problem solving.",
   projects:
     "Highlighted projects:\n- Clayora: full-stack product platform with authentication.\n- Code Trace: code execution visualizer for learning programming flow.\n- Finance Dashboard: responsive analytics dashboard with secure UI patterns.\n- Inventory Dashboard: product tracking and dashboard analytics.\n- EcoSnap: AI-based waste detection and recycling suggestions.\n- CipherSQL Studio: secure SQL/database query project.",
   experience:
-    "Experience includes self-built frontend projects, full-stack academic and personal projects, hackathon work on EcoSnap, and continuous learning through GitHub, DSA practice, and open-source-style development.",
+    "Experience includes frontend projects, backend-integrated full-stack apps, AI-based hackathon work on EcoSnap, academic and personal projects, and continuous learning through GitHub, DSA practice, and product development.",
   education:
     "Bhanu is pursuing B.Tech in Computer Science and Engineering and has coursework exposure to DSA, DBMS, operating systems, computer networks, software engineering, and web development.",
   contact:
     "You can contact Bhanu through the contact form on this portfolio, email at bhanubasyan@gmail.com, GitHub: github.com/Bhanubasyan, or LinkedIn: linkedin.com/in/bhanu-b82596253/.",
   resume:
-    "Use the Download Resume button in the hero section or the Download CV button in About. The resume highlights React, JavaScript, Node.js, full-stack project work, internships, and leadership experience.",
+    "Use the Download Resume button in the hero section or the Download CV button in About. The resume highlights software development, React, JavaScript, Node.js, backend APIs, AI-based project work, internships, and leadership experience.",
 };
 
 const createLocalReply = (input) => {
@@ -57,7 +57,7 @@ const createLocalReply = (input) => {
     return portfolioKnowledge.summary;
   }
 
-  return `I can help you explore Bhanu's portfolio.\n\nTry asking about projects, skills, experience, resume, education, or contact details.`;
+  return `I can help you explore Bhanu's portfolio.\n\nTry asking about frontend, backend, AI projects, skills, experience, resume, education, or contact details.`;
 };
 
 const Assistant = () => {
@@ -109,7 +109,7 @@ const Assistant = () => {
         <div className="assistant-header">
           <div>
             <h3>Portfolio Assistant</h3>
-            <p className="assistant-subtitle">Ask about skills, projects, resume, or hiring.</p>
+            <p className="assistant-subtitle">Ask about frontend, backend, AI, projects, or hiring.</p>
           </div>
           <span onClick={() => setOpen(false)} aria-label="Close assistant" role="button">
             <X size={19} />
@@ -120,7 +120,7 @@ const Assistant = () => {
           {chat.length === 0 && (
             <>
               <div className="assistant-message bot">
-                Hi, I can answer questions about Bhanu's projects, skills, experience, resume, and contact details.
+                Hi, I can answer questions about Bhanu's frontend, backend, AI work, projects, skills, resume, and contact details.
               </div>
               <div className="quick-prompts">
                 {quickPrompts.map((prompt) => (
